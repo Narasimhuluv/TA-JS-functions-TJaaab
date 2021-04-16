@@ -95,3 +95,4 @@ isLeapYear()
 function getFactorial(){
   let number = +prompt("Enter a number")
 }
+
