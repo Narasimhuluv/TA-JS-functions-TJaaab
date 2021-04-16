@@ -61,8 +61,8 @@ addTwoNumbers()
 
 function getTable(){
   let num = +prompt("Enter a number")
-  for(i=1; i<9; i*2){
-    console.log(sum)
+  for(i=1; i<=10; i++){
+    console.log(`${num} * ${i} = ${num * i}`)
   }
 }
 getTable()
@@ -75,7 +75,7 @@ getTable()
 */
 function isLeapYear(){
   let year = +prompt("Enter a year")
-    if(year %2==0){
+    if(year % 4 ==0){
       console.log(year)
       alert(`${year} is Leap year`)
     }else{
@@ -94,5 +94,10 @@ isLeapYear()
 
 function getFactorial(){
   let number = +prompt("Enter a number")
+  let final = 1;
+  for(let i = number; i>=1; i--){
+    final = final *=i
+  }
+  alert(`The factorial of ${num} is ${final}`)
 }
 
