@@ -248,9 +248,44 @@ Do the following with above problem.
 
 // - What is the typeof returnValue
 
-// function addOrEven(n){
-//   return  if(n % 2 ===0){
+function oddOrEven(n){
+  if(n % 2 ===0){
+    return `Number is Even`
+  }else{
+    return `Number is Odd`
+  }
+}
+let message = oddOrEven(10)
 
-//   }
-// }
-// let message = oddOrEven(10)
+const oddOrEven = function oddOrEven(n){
+  if(n%2== 0){
+    return `Number is Even`
+  }else{
+    return `Number is odd`
+  }
+}
+let message = oddOrEven(13)
+
+const oddOrEven = function(n){
+  if(n%2 !==0){
+    return `Number is Even`
+  }else{
+    return `Number is odd`
+  }
+}
+let message = oddOrEven(15)
+
+const oddOrEven = (n) => {
+  if(n % 2 === 0){
+    return `Number is Even`
+  }else{
+    return `Number is odd`
+  }
+}
+let message = oddOrEven(18)
+
+const oddOrEven = (n) => n % 2 === 0 ? `Number is even` : `Number is odd`;
+let message = oddOrEven(15)
+ 
+  
+
