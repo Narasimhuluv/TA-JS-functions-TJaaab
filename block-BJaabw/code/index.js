@@ -11,8 +11,9 @@ minToSec(2) ➞ 120
 */
 
 // - Write a Function Decleration for above problem
-function minToSec() {
+function minToSec(minutes) {
   // Your code
+  return 
 }
 // - Execute the function with required parameter
 
@@ -64,9 +65,15 @@ Create a function that take the age are return the appropiate drink based on the
 
 */
 
-function appropiateDrinks() {
+function appropiateDrinks(num) {
   // Your code
+  if(num <= 14)  return `drink fruit juice`;
+  if(num <= 18) return ` drink soda`;
+  if(num <= 21) return `drink fruit-flavord beer`
+  if(num >= 21) return `drink throat-piercing vodka` 
 }
+let message = appropiateDrinks(23)
+console.log(message)
 
 /* 4. Add two numers or string
 
