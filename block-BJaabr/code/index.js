@@ -10,19 +10,23 @@ Do the following for the given problem:
 function convertToString(n) {
   return String(n);
 }
+convertToString(12)
 
 // - Write a Function Expression
 let convertToString = function (n) {
   return String(n);
 };
+convertToString(10)
 
 // - Write an Arrow Function without curly brackets (if possible)
 let convertToString = (n) => String(n);
+convertToString(10)
 
 // - Write an Arrow Function with curly brackets
 let convertToString = (n) => {
   return String(n);
 };
+convertToString(10)
 
 // - Execute the function
 convertToString(21);
@@ -41,18 +45,33 @@ Do the following with above problem.
 */
 
 // - Write a Function Declaration
+function addOne(n){
+  return n + 1
+}
+let message = addOne(10)
 
 // - Write a Function Expression
+const addOne = function add(n){
+  return n + 1
+}
+let message = addOne(10)
 
 // - Write an Arrow Function without curly brackets(if possible)
-
+const addOne = (n) => n + 1;
+let message = addOne(10)
 // - Write an Arrow Function with curly brackets
+const addOne = (n) => {
+  return n + 1
+}
+let message = addOne (10)
+
 
 // - Execute the function
 
 // - Execute the function and store the return value in a variable.
 
 // - What is the typeof returnValue
+// it is an variable
 
 /* 2. Subtract one
 
@@ -75,6 +94,20 @@ Do the following with above problem.
 
 // - What is the typeof returnValue
 
+function substractOne(n){
+  return n - 1
+}
+
+const substractOne = function sub(n){
+  return n - 1
+}
+const substractOne = (n) => n - 1;
+
+const substractOne = (n) => {
+  return  n-1
+}
+let message = substractOne(5)
+
 /* 3. Add two numbers
 
 Write a function named `sum` that accepts two numbers and returns the sum of them.
@@ -95,6 +128,21 @@ Do the following with above problem.
 // - Execute the function and store the return value in a variable
 
 // - What is the typeof returnValue
+
+function sum(a,b){
+  return a + b
+}
+const sum = function sumTwo(a,b){
+  return a + b
+}
+const sum = function(a,b){
+  return a + b
+}
+const  sum = (a,b) => a + b ;
+const sum = (a,b) =>{
+  return a + b
+}
+let message = sum (10,20)
 
 /* 4. Square of the given value
 
@@ -117,6 +165,24 @@ Do the following with above problem.
 
 // - What is the typeof returnValue
 
+function square(n){
+  return n ** 2
+}
+
+const square = function squareTwo(n){
+  return n**2
+}
+const square = function(n){
+  return n ** 2
+}
+
+const square = (n) => n ** 2
+
+const square = (n) =>{
+  return n ** 2
+}
+let message = square(3)
+
 /* 5. Find isGreater
 
 Write a function named isGreater that accepts two numbers`x` and`y` and returns`true` if x is greater than y or return `false`.
@@ -137,6 +203,24 @@ Do the following with above problem.
 // - Execute the function and store the return value in a variable
 
 // - What is the typeof returnValue
+
+function isGreater(x,y){
+  return x > y || x < y
+}
+const isGreater = function great_lessor(x,y){
+  return x > y || x < y
+}
+
+const isGreater = function(x,y){
+  return x>y || x<y
+}
+
+const isGreater = (x,y) => x>y || x<y;
+
+const isGreater = (x,y) => {
+  return x>y || x<y
+}
+let message = isGreater(10,8)
 
 /* 6.
 
@@ -163,3 +247,10 @@ Do the following with above problem.
 // - Execute the function and store the return value in a variable
 
 // - What is the typeof returnValue
+
+// function addOrEven(n){
+//   return  if(n % 2 ===0){
+
+//   }
+// }
+// let message = oddOrEven(10)
