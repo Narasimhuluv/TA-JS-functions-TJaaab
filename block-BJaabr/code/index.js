@@ -276,7 +276,7 @@ const oddOrEven = function(n){
 let message = oddOrEven(15)
 
 const oddOrEven = (n) => {
-  if(n % 2 === 0){
+  if(n % 2 === 0){                                                                                                               
     return `Number is Even`
   }else{
     return `Number is odd`
