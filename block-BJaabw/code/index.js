@@ -13,8 +13,11 @@ minToSec(2) ➞ 120
 // - Write a Function Decleration for above problem
 function minToSec(minutes) {
   // Your code
-  return 
+  return minutes * 60
+  
 }
+let message = minToSec(30)
+console.log(message)
 // - Execute the function with required parameter
 
 /* 2. 
@@ -27,9 +30,12 @@ isInRange(1, 10, 19); // false
 */
 
 // - Write a Function Decleration for above problem
-function isInRange() {
+function isInRange(lower,upper,number) {
   // Your code
+  return number > lower && number < upper
 }
+let message = isInRange(1,20,9)
+console.log(message)
 // - Execute the function with required parameter
 
 /* 2. calculateBMI
@@ -50,9 +56,29 @@ Obese: BMI is 30 or more
 
 */
 
-function calculateBMI() {
+function calculateBMI(weight,height) {
   // Your code
+  let bmi = weight / (height * height);
+  switch(true){
+    case bmi < 18.5:
+      return `UNDERWEIGHT`;
+    break;
+
+    case bmi > 18.5 && bmi < 24.9:
+      return `NORMAL`;
+      break;
+    
+    case bmi > 24.9 && bmi < 29.9:
+      return `OVERWEIGHT`;
+    break;
+
+    case bmi > 29.9 && bmi >= 30:
+      return `OBESE`
+    break
+  }
 }
+let message = calculateBMI(63, 5.8)
+console.log(message)
 
 /* 3. appropiateDrinks
 
